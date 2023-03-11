@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body onload="showProyects()">
+    <div class="container" id="header">
+        <h1>List of tasks</h1>
+
+
+    </div>
+    <div class="container">
+        <div class="element">
+            <ul id="proyects">
+                <!-- <li>Juan Perez</li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div style="text-align: center;">
+            <button style="cursor: pointer;" onclick="addProyects()">+</button>
+        </div>
+        <form id="form">
+            <input type="text" id="task" placeholder="Task"/>
+            <input type="date" id="date" placeholder="Date"/>
+        </form>
+    </div>
+    <script src="js/tasks.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
